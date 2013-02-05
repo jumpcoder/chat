@@ -1,0 +1,7 @@
+db
+show dbs
+use user
+show collections
+db.users.remove()
+db.users.find()
+db.dropDatabase()

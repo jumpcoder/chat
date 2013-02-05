@@ -1,0 +1,228 @@
+body {
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.warningStyle{
+	color:red;
+	display:none;
+}
+/*
+**window类的css样式
+ *
+ */
+.windowStyle{
+	border:1px solid #00B7FF;
+	background-color:#00B7FF;
+}
+
+.titleAreaStyle{
+	
+}
+
+.closeButtonStyle{
+	float:right;
+	margin:2px;
+	cursor:pointer;
+}
+
+.contentAreaStyle{
+	background-color:white;
+	overflow:auto;/*显示滚动条*/
+	position:relative;
+}
+/*
+**主窗口的css样式
+*
+*/
+#mainWindow{
+	width:200px;
+}
+#mainWindow > .contentAreaStyle{
+	height:400px;
+	width:200px;
+}
+#registerUserButton, #createGroupButton{
+	color: #00B7FF;
+	text-decoration:none;
+	margin:1px;
+}
+/*
+**查询窗口的css样式
+*/
+#queryFriendWindow,#queryGroupWindow{
+	width:200px;
+}
+#queryFriendWindow > .contentAreaStyle, #queryGroupWindow > .contentAreaStyle{
+	height:150px;
+	width:200px;
+}
+
+/*
+**确认窗口的css样式
+*/
+#messageWindow{
+	width:200px;
+}
+#messageWindow > .contentAreaStyle{
+	height:150px;
+	width:200px;
+}
+/*
+**chat窗口的css样式
+*/
+div[id$="ChatFriendWindow"]{
+	width:450px;
+}
+div[id$="ChatFriendWindow"] > .contentAreaStyle{
+	height:350px;
+	width:450px;
+}
+div[id$="ChatFriendWindow"] .outputAreaStyle{
+	width:100%;
+	height:240px;
+	border:1px solid #00B7FF;
+	border-left:0px;
+	border-right:0px;
+	padding:0px;
+	margin:0px;
+}
+div[id$="ChatFriendWindow"] .inputAreaStyle{
+	width:100%;
+	height:100px;
+	border:1px solid #00B7FF;
+	border-left:0px;
+	border-right:0px;
+	padding:0px;
+	margin:0px;
+}
+div[id$="ChatGroupWindow"]{
+	width:450px;
+}
+div[id$="ChatGroupWindow"] > .contentAreaStyle{
+	height:350px;
+	width:450px;
+}
+div[id$="ChatGroupWindow"] .outputAreaStyle{
+	width:100%;
+	height:240px;
+	border:1px solid #00B7FF;
+	border-left:0px;
+	border-right:0px;
+	padding:0px;
+	margin:0px;
+}
+div[id$="ChatGroupWindow"] .inputAreaStyle{
+	width:100%;
+	height:100px;
+	border:1px solid #00B7FF;
+	border-left:0px;
+	border-right:0px;
+	padding:0px;
+	margin:0px;
+}
+
+/*
+**设置createWindowArea
+
+#createWindowArea{
+	display:inline;
+	background:white;
+}*/
+
+/*
+**位于主窗口内的div.content内的用户标签页面的css
+*
+*/
+#tabs{
+	margin:0;
+	padding:0;
+	list-style:none
+}
+
+#tabs > li{
+	background-color:#DFF4FF;
+	border:2px solid white;
+	border-bottom:2px solid #CAEDFF;
+	width:50px;
+	color: #00B7FF;
+	cursor:pointer;
+	float:left;
+	padding:5px;
+	margin-right:2px;
+	position:relative;
+	left:10px;
+}
+
+#tabs > li.selectedTabsStyle{
+	background-color:#E7F7FF;
+	border:2px solid white;
+	border-bottom:2px solid #E7F7FF;
+}
+
+#tabsContent > div{
+	clear:left;
+	background-color:#E7F7FF;
+	height:350px;
+	padding:10px;
+	display:none;
+}
+
+
+#tabsContent > div.selectedTabsContentStyle{
+	display:block;
+}
+
+.listAreaStyle{
+	margin:0;
+	padding:0;
+	list-style:none
+}
+
+
+
+
+
+/*各种按钮样式 */
+.chatFriendButtonStyle, .chatGroupButtonStyle{
+	color:#00B7FF;
+	cursor:pointer;
+	display:inline;
+	margin:2px;
+	margin-right:100px;
+}
+.deleteFriendButtonStyle, .quitGroupButtonStyle{
+	color:#00B7FF;
+	cursor:pointer;
+	display:inline;/*让div的宽度自动适应文字的宽度*/
+	margin:2px;
+}
+
+/*按钮的css样式*/
+.buttonStyle{
+	color:#00B7FF;
+	cursor:pointer;
+	display:inline;/*让div的宽度自动适应文字的宽度*/
+	margin:2px;
+}
+#queryFriendButton, #queryGroupButton{
+	position:absolute;
+	left:5px;
+	bottom:5px;
+}
+#logoutButton{
+	position:absolute;
+	right:5px;
+	bottom:5px;
+}
+#acceptButton{
+	position:relative;
+}
+#refuseButton{
+	position:relative;
+}
+#sendButton{
+	position:absolute;
+	right:5px;
+	bottom:5px;
+}
+

@@ -1,0 +1,11 @@
+﻿
+form(method = "post")
+	| 用户名：
+	input#user_id(type = "text", name = "user_id")
+	br
+	| 密码：
+	input#password(type = "text", name = "password")
+	br
+	//注意这里如果是submit按钮的话一定会发送一个post请求，所以这里应该用button
+	input#authentication(type = "button", value = "Submit")
+	
